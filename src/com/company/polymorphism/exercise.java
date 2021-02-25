@@ -1,4 +1,4 @@
-package com.company;
+package com.company.polymorphism;
 
 import java.util.Arrays;
 import java.util.LinkedList;

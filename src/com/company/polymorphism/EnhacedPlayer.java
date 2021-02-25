@@ -1,4 +1,4 @@
-package com.company;
+package com.company.polymorphism;
 
 public class EnhacedPlayer {
     private String name;
