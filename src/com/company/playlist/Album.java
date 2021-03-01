@@ -2,6 +2,7 @@ package com.company.playlist;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Album {
     private ArrayList<Song>songs;
@@ -34,7 +35,7 @@ public class Album {
         }
         return false;
     }
-    public boolean addToplayList(String title, LinkedList<Song>playlist){
+    public boolean addToplayList(String title, List<Song> playlist){
         Song song = searchSong(title);
         if(song !=null){
             playlist.add(song);
@@ -43,7 +44,7 @@ public class Album {
         System.out.println("This song "+title+" is not in this album");
         return false;
     }
-    public boolean addToplayList(int trackNumber, LinkedList<Song>playlist){
+    public boolean addToplayList(int trackNumber, List<Song>playlist){
         int index = trackNumber-1;
         if(index>0 && index<songs.size()){
             playlist.add(this.songs.get(index));

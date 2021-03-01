@@ -1,14 +1,12 @@
 package com.company.playlist;
 
 
-import java.util.LinkedList;
-import java.util.ListIterator;
-import java.util.Scanner;
+import java.util.*;
 
 public class PlayList {
 
     public static void main(String[] args) {
-        LinkedList<Song>playList = new LinkedList<>();
+     List<Song>playList = new ArrayList<>();
         Album album1 = new Album("Let's get Loud", "Jennifer Lopez");
         Album album2 = new Album("Take me Home", "Jess Glynne");
         Album album3 = new Album("Are you With Me", "Lost Frequencies");
@@ -31,7 +29,7 @@ public class PlayList {
 
 
     }
-    public static void visit(LinkedList<Song>playList){
+    public static void visit(List<Song> playList){
         Scanner scanner = new Scanner(System.in);
         boolean goingForward = true;
         boolean quit = false;
